@@ -82,10 +82,9 @@ export function SharedModal() {
 
   return (
     <Modal show={isOpen} onClose={() => setIsOpen(false)}>
-      <h1 className={styles.heading}>New sound mix detected!</h1>
+      <h1 className={styles.heading}>检测到新的声音分享！</h1>
       <p className={styles.desc}>
-        Someone has shared the following mix with you. Would you want to
-        override your current selection?
+        有人分享了以下声音组合给你，你想覆盖当前的选择吗？
       </p>
       <div className={styles.sounds}>
         {sharedSounds.map(sound => (
@@ -96,13 +95,13 @@ export function SharedModal() {
       </div>
       <div className={styles.footer}>
         <button className={cn(styles.button)} onClick={() => setIsOpen(false)}>
-          Cancel
+          取消
         </button>
         <button
           className={cn(styles.button, styles.primary)}
           onClick={handleOverride}
         >
-          Override
+          覆盖
         </button>
       </div>
     </Modal>

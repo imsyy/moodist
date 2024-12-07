@@ -5,6 +5,10 @@
   <a href="https://moodist.app">Visit <strong>Moodist</strong></a> | <a href="https://buymeacoffee.com/remvze">Buy Me a Coffee</a>
 </div>
 
+## Change Log
+
+🌐 Translated 80% of the text into Chinese and made adjustments to some components.
+
 ## Table of Contents
 
 - ⚡ [Features](#features)

@@ -41,11 +41,11 @@ export function Exercise() {
   const getLabel = (phase: Phase) => {
     switch (phase) {
       case 'inhale':
-        return 'Inhale';
+        return '吸气';
       case 'exhale':
-        return 'Exhale';
+        return '呼气';
       default:
-        return 'Hold';
+        return '屏息';
     }
   };
 
@@ -113,9 +113,9 @@ export function Exercise() {
         value={selectedExercise}
         onChange={e => setSelectedExercise(e.target.value as Exercise)}
       >
-        <option value="Box Breathing">Box Breathing</option>
-        <option value="Resonant Breathing">Resonant Breathing</option>
-        <option value="4-7-8 Breathing">4-7-8 Breathing</option>
+        <option value="Box Breathing">方格呼吸</option>
+        <option value="Resonant Breathing">共鸣呼吸</option>
+        <option value="4-7-8 Breathing">4-7-8 呼吸法</option>
       </select>
     </>
   );

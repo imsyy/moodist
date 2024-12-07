@@ -19,17 +19,15 @@ export function List({ close }: ListProps) {
   return (
     <div className={styles.list}>
       <h3 className={styles.title}>
-        Your Presets {presets.length > 0 && `(${presets.length})`}
+        我的预设 {presets.length > 0 && `(${presets.length})`}
       </h3>
 
-      {!presets.length && (
-        <p className={styles.empty}>You don&apos;t have any presets yet.</p>
-      )}
+      {!presets.length && <p className={styles.empty}>你还没有任何预设</p>}
 
       {presets.map(preset => (
         <div className={styles.preset} key={preset.id}>
           <input
-            placeholder="Untitled"
+            placeholder="未命名"
             type="text"
             value={preset.label}
             onChange={e => changeName(preset.id, e.target.value)}

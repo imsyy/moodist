@@ -33,7 +33,7 @@ export function New() {
 
   return (
     <div className={styles.new}>
-      <h3 className={styles.title}>New Preset</h3>
+      <h3 className={styles.title}>新预设</h3>
 
       <form
         className={cn(styles.form, noSelected && styles.disabled)}
@@ -41,19 +41,17 @@ export function New() {
       >
         <input
           disabled={noSelected}
-          placeholder="Preset's Name"
+          placeholder="预设名称"
           required
           type="text"
           value={name}
           onChange={e => setName(e.target.value)}
         />
-        <button disabled={noSelected}>Save</button>
+        <button disabled={noSelected}>保存</button>
       </form>
 
       {noSelected && (
-        <p className={styles.noSelected}>
-          To make a preset, first select some sounds.
-        </p>
+        <p className={styles.noSelected}>要制作一个预设，先选择一些声音</p>
       )}
     </div>
   );

@@ -4,10 +4,6 @@ import { Item } from '../item';
 
 export function CountdownTimer() {
   return (
-    <Item
-      href="https://timesy.app"
-      icon={<MdOutlineTimer />}
-      label="Countdown Timer"
-    />
+    <Item href="https://timesy.app" icon={<MdOutlineTimer />} label="倒计时" />
   );
 }
